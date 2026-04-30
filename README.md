@@ -1,14 +1,14 @@
 # repo-nextjs
 
-A Next.js (App Router) app that consumes `@playground/ui`.
+A Next.js (App Router) app consuming `@playground/ui`.
 
 ## Standalone
 
 ```bash
-pnpm install   # fetches @playground/ui tarball from GitHub Releases
+pnpm install   # @playground/ui resolves from GitHub Release tarball via pnpm.overrides
 pnpm dev
 ```
 
-Same dual-mode story as `repo-vite`: the dep points at a GitHub Release tarball; the umbrella overrides it to `workspace:*`.
+## Under the umbrella
 
-The one Next-specific knob is `transpilePackages: ['@playground/ui']` in `next.config.mjs`, since Next won't run `node_modules` through SWC by default and `@playground/ui` ships TSX source.
+Run `nity bootstrap` from the umbrella root. `@playground/ui` links to local source. The one Next-specific requirement: `transpilePackages: ['@playground/ui']` in `next.config.mjs`, since Next won't run `node_modules` through SWC by default.
