@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 
 export const metadata = {
-  title: 'Next.js + @playground/ui',
+  title: 'Next.js + @nity/ui',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

@@ -1,5 +1,5 @@
 {
-  "name": "@playground/next-web",
+  "name": "@nity/next-web",
   "private": true,
   "version": "0.1.0",
   "scripts": {
@@ -9,7 +9,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@playground/ui": "^0.1.0",
+    "@nity/ui": "https://github.com/nity-ch/repo-shared/releases/download/v0.1.0/nity__ui.tgz",
+    "@nity/utils": "^0.1.0",
     "next": "^15.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"

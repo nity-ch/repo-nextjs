@@ -1,11 +1,11 @@
 {
-  "name": "@playground/nextjs-root",
+  "name": "@nity/nextjs-root",
   "private": true,
   "version": "0.0.0",
   "packageManager": "pnpm@9.12.0",
   "scripts": {
-    "dev": "pnpm --filter @playground/next-web dev",
-    "build": "pnpm --filter @playground/next-web build",
+    "dev": "pnpm --filter @nity/next-web dev",
+    "build": "pnpm --filter @nity/next-web build",
     "typecheck": "pnpm -r typecheck"
   }
 }
